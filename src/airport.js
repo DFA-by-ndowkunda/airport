@@ -21,14 +21,14 @@ class Airport {
     }
     takeOff(plane) {
         if (!plane.isFlying && this.airport.includes(plane)) {
-             this.airport.splice(this.airport.indexOf(plane), 1);
-             return 'left airport';
+            this.airport.splice(this.airport.indexOf(plane), 1);
+            return "left airport";
         } else {
-            return `sorry ${plane} has already taken off`
+            return `sorry ${plane} has already taken off`;
         }
-        }
+    }
         
-     }
+}
 
 
 module.exports = Airport;
